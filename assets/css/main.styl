@@ -1,0 +1,220 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,400);
+
+vendor-prefixes ?= webkit moz official
+@import 'nib'
+
+
+crema = #FBC599
+crema-o = #CDBB93
+rojo = #F35F55
+tinto = #320F0F
+tinto-c = #7D322C
+verde = #335650
+verde-c = #9EAE8A
+
+*::-webkit-scrollbar
+	background-color transparent
+	height 6px
+	width 6px
+	&-track
+		background-color black
+	&-thumb
+		background-color rojo
+		border-radius 6px
+
+
+*
+	border 0
+	margin 0
+	padding 0
+
+body
+	font-family: 'Lato', sans-serif;
+
+
+header
+	background black
+	overflow hidden
+	nav 
+		animation zoomIn 1s 1
+		ul 
+			
+			li
+				font-size 12px
+				letter-spacing .5em
+				list-style none
+				margin-right .5em
+				text-align center
+				text-transform uppercase
+					
+		a 
+			color white
+			display block
+			padding 1.5em
+			text-decoration none
+			position relative
+			z-index 100				
+			
+			&:hover
+				animation shake .8s 1
+				background rojo
+				color white
+				font-weight 400
+				margin 0 auto
+				&:before
+					border 25px solid rojo
+					border-left 26px solid transparent
+					border-top 26px solid transparent
+					content ""
+					position absolute
+					right 100%
+					top 0
+					z-index 1
+				&:after
+					border 25px solid rojo
+					border-right 25px solid transparent
+					border-bottom 25px solid transparent
+					content ""
+					position absolute
+					left 100%
+					top 0
+					z-index 1
+				
+			&:active
+					animation flipOutY .8s 1
+
+
+
+.container
+	padding: 2em;
+	position relative
+.cont
+	margin 0 auto
+	padding-top 5em
+	width 80%
+	p
+		font-size 16px
+		line-height 2em
+		text-align justify
+	h2
+		font-size 2em
+		font-weight 400
+		margin-bottom 2em
+		text-align center
+		text-transform uppercase
+		letter-spacing .5em
+	img:hover
+		animation rubberBand .5s 1
+	
+	img
+		animation flipInY 2s 1
+		border 6px solid white
+		border-radius 50%
+		display block
+		margin 0 auto
+		width 50%
+.hed
+	padding 0 !important
+	overflow hidden
+.up
+	background black
+	bottom 0
+	color white
+	left 0
+	padding-top 12em
+	position absolute
+	right 0
+	text-align center
+	top 0
+	h1
+		animation fadeIn 2s 1
+		font-weight 100
+		letter-spacing .8em
+		margin-top 5em
+		position relative
+		right -.5em
+		text-transform uppercase
+	
+	#diamond
+		animation bounceInUp 2s 1
+		font-size 15em !important
+	#arr-dw
+		animation pulse 1s infinite
+		font-size 4em
+		margin-top .8em
+.first
+	padding 24em
+
+#showNav
+	color white
+	cursor pointer
+	display none
+	font-size 1.4em
+	padding 20px
+	text-align center
+	&:hover
+		animation shake .9s 1
+		
+.comments
+	background black
+	color rojo
+	padding 4em
+.top-60
+	margin-top 60px
+		
+
+
+.navigation 
+	list-style none
+	margin 0
+	display -webkit-box
+	display -moz-box
+	display -ms-flexbox
+	display -webkit-flex
+	display flex
+	-webkit-flex-flow row wrap
+	justify-content flex-start
+	align-items center
+	
+	li:first-of-type i
+		color rojo
+		font-size 2.5em
+		margin 0 1em 0 1em
+		
+footer
+	background black
+	color white
+	padding 2em
+	letter-spacing 1em
+	text-align center
+
+<<<<<<< HEAD
+.video-container
+	position relative
+	padding-bottom 56.25% /* 169 */
+	padding-top 25px
+	height 0
+	video, iframe, object, embed, source
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+=======
+>>>>>>> b03edc104202ad1782165932d579b3f4dddfb2ed
+
+@media all and (max-width: 750px) 
+	.navigation 
+		-webkit-flex-flow: column wrap;
+		flex-flow: column wrap;
+		padding: 0;
+			
+		li
+			margin 10px
+			
+	#nav 
+		display: none;
+
+
+	#showNav
+		display: block;
