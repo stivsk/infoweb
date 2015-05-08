@@ -27,14 +27,11 @@
 			.when('/textos', {
 				templateUrl : 'app/components/textos/textosView.html',
 				controller 	: 'textoController'
-<<<<<<< HEAD
 			})
 
 			.when('/presentacion', {
 				templateUrl : 'app/components/presentacion/presentacion.html',
 				controller 	: 'presentacionController'
-=======
->>>>>>> b03edc104202ad1782165932d579b3f4dddfb2ed
 			});
 	});
 
