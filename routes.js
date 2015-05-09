@@ -41,16 +41,21 @@
 		$scope.ruta = 'pages/bla.html';
 	});
 
-	yeison.controller('desktopController', function($scope) {
-		$scope.titulo = 'Look! I am an about page.';
+	yeison.controller('imageController', function($scope) {
+		$scope.titulo = 'mobile first';
 	});
 
-	yeison.controller('webController', function($scope) {
+	yeison.controller('videoController', function($scope) {
 		$scope.titulo = 'Contact us! JK. This is just a demo.';
 	});
 
-	yeison.controller('mobileController', function($scope) {
+	yeison.controller('textoController', function($scope) {
 		$scope.titulo = 'mobile first';
 	});
+
+	yeison.controller('presentacionController', function($scope) {
+		$scope.titulo = 'mobile first';
+	});
+
 
 })();
